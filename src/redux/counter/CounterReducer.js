@@ -4,9 +4,13 @@ const initialState = {
 
 const counterReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "INCREASE":
+        case "INCREASE_COUNTER":
             return {
                 counter: state.counter + 1,
+            };
+        case "DECREASE_COUNTER":
+            return {
+                counter: state.counter - 1,
             };
         default:
             return state;
