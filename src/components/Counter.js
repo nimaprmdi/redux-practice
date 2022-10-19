@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { increase } from "../redux/counter/CounterAction";
-
+{
+    /*------------------------------------*\
+       #Using Function to map to props 
+    \*------------------------------------*/
+}
 const Counter = (props) => {
     return (
         <div>
